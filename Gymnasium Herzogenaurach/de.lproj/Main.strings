@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "Vertretungsplan"; ObjectID = "KQZ-1w-vlD"; */
+"KQZ-1w-vlD.text" = "Vertretungsplan";
+
+/* Class = "UITextField"; placeholder = "Klasse/ Jahrgangsstufe eingeben"; ObjectID = "Nqb-cr-fLv"; */
+"Nqb-cr-fLv.placeholder" = "Klasse/ Jahrgangsstufe eingeben";
+
+/* Class = "UILabel"; text = "Vertretungsplan-Filter"; ObjectID = "Rk9-2M-Mt4"; */
+"Rk9-2M-Mt4.text" = "Vertretungsplan-Filter";
+
+/* Class = "UINavigationItem"; title = "Gymnasium Herzogenaurach"; ObjectID = "UFw-kj-GFU"; */
+"UFw-kj-GFU.title" = "Gymnasium Herzogenaurach";
+
+/* Class = "UINavigationItem"; title = "Gymnasium Herzogenaurach"; ObjectID = "ZGJ-92-Rgu"; */
+"ZGJ-92-Rgu.title" = "Gymnasium Herzogenaurach";
+
+/* Class = "UITabBarItem"; title = "Vertretungsplan"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "Vertretungsplan";
+
+/* Class = "UITabBarItem"; title = "Einstellungen"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "Einstellungen";
+
+/* Class = "UITabBarItem"; title = "Termine"; ObjectID = "dvI-G4-2TU"; */
+"dvI-G4-2TU.title" = "Termine";
+
+/* Class = "UILabel"; text = "Termine"; ObjectID = "fPt-L6-ND5"; */
+"fPt-L6-ND5.text" = "Termine";
+
+/* Class = "UINavigationItem"; title = "Einstellungen"; ObjectID = "gZv-ny-DHO"; */
+"gZv-ny-DHO.title" = "Einstellungen";
