@@ -2,8 +2,7 @@ import UIKit
 import WebKit
 
 class FirstViewController: UIViewController {
-    
-    var stringURL = "https://gymh.philippdormann.de/vertretungsplan/?theme=Blue&platform=ios"
+    var stringURL = "https://gymh.philippdormann.de/vertretungsplan/"
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var montag: UIButton!
     @IBOutlet weak var dienstag: UIButton!
@@ -12,34 +11,50 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var freitag: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let switchState = UserDefaults.standard.bool(forKey: "wochenansicht")
-        if switchState {
-            stringURL += "week.php"
+        
+        let showLehrerNames = UserDefaults.standard.bool(forKey: "lehrer-full-name")
+        if showLehrerNames {
+            stringURL = addToURL(url: stringURL, key: "display-lehrer-full", value: "")
+        }
+        
+        let showWeek = UserDefaults.standard.bool(forKey: "wochenansicht")
+        if showWeek {
+            stringURL = "https://gymh.philippdormann.de/vertretungsplan/week.php"
+            if showLehrerNames {
+                stringURL = addToURL(url: stringURL, key: "display-lehrer-full", value: "")
+            }
             montag.isHidden = true
             dienstag.isHidden = true
             mittwoch.isHidden = true
             donnerstag.isHidden = true
             freitag.isHidden = true
         }
+        
         let filter = UserDefaults.standard.string(forKey: "filter")
         if (filter != "" && filter != nil) {
-            stringURL += "&f="+filter!
+            stringURL = addToURL(url: stringURL, key: "f", value: filter!)
         }
-        var theme = UserDefaults.standard.string(forKey: "theme")
-        if (theme == "" || theme == nil) {
-            theme = "1"
+        
+        var themeID = UserDefaults.standard.string(forKey: "theme")
+        if (themeID == "" || themeID == nil) {
+            themeID = "1"
         }
-        stringURL += "&t="+theme!
+        
+        stringURL = addToURL(url: stringURL, key: "theme-id", value: themeID!)
         let loggedIn = UserDefaults.standard.bool(forKey: "loggedin")
         if(loggedIn){
             webView.load(URLRequest(url: URL(string: stringURL)!))
         }
+        
+        stringURL = addToURL(url: stringURL, key: "platform", value: "ios")
+        print(stringURL)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         let loggedIn = UserDefaults.standard.bool(forKey: "loggedin")
         if(!loggedIn){
             login()
+            self.webView.load(URLRequest(url: URL(string: "https://gymh.philippdormann.de/login/")!))
         }
     }
     
@@ -74,5 +89,19 @@ class FirstViewController: UIViewController {
     }
     @IBAction func freitag(_ sender: UIButton) {
         webView.load(URLRequest(url: URL(string: stringURL+"&d=fr")!))
+    }
+    
+    func addToURL(url: String, key: String, value: String) -> String {
+        var returnURL = url
+        if returnURL.lowercased().range(of: "?") != nil {
+            returnURL += "&"
+        } else {
+            returnURL += "?"
+        }
+        returnURL += key
+        if value != "" {
+            returnURL += "="+value
+        }
+        return returnURL
     }
 }

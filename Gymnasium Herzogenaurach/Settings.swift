@@ -4,17 +4,25 @@ class Settings: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var filterInput: UITextField!
     @IBOutlet weak var wochenSwitch: UISwitch!
+    @IBOutlet weak var lehrerSwitch: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
         let filter = UserDefaults.standard.string(forKey: "filter")
         self.filterInput.text = filter
         filterInput.delegate = self
         
-        let switchState = UserDefaults.standard.bool(forKey: "wochenansicht")
-        if switchState {
+        let switchStateWeek = UserDefaults.standard.bool(forKey: "wochenansicht")
+        if switchStateWeek {
             wochenSwitch.setOn(true, animated: false)
         } else {
             wochenSwitch.setOn(false, animated: false)
+        }
+        
+        let switchStateLehrer = UserDefaults.standard.bool(forKey: "lehrer-full-name")
+        if switchStateLehrer {
+            lehrerSwitch.setOn(true, animated: false)
+        } else {
+            lehrerSwitch.setOn(false, animated: false)
         }
     }
     
@@ -82,6 +90,14 @@ class Settings: UIViewController, UITextFieldDelegate {
             UserDefaults.standard.set(true, forKey: "wochenansicht")
         } else {
             UserDefaults.standard.set(false, forKey: "wochenansicht")
+        }
+        showAlert()
+    }
+    @IBAction func lehrername(_ sender: Any) {
+        if lehrerSwitch.isOn {
+            UserDefaults.standard.set(true, forKey: "lehrer-full-name")
+        } else {
+            UserDefaults.standard.set(false, forKey: "lehrer-full-name")
         }
         showAlert()
     }
