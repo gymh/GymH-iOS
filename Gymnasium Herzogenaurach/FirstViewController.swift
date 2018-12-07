@@ -46,9 +46,7 @@ class FirstViewController: UIViewController {
             webView.load(URLRequest(url: URL(string: stringURL)!))
         }
         
-        stringURL = addToURL(url: stringURL, key: "platform", value: "ios")
-        print(stringURL)
-    }
+        stringURL = addToURL(url: stringURL, key: "platform", value: "ios")    }
     
     override func viewDidAppear(_ animated: Bool) {
         let loggedIn = UserDefaults.standard.bool(forKey: "loggedin")
@@ -61,7 +59,7 @@ class FirstViewController: UIViewController {
     func login(){
         let alert = UIAlertController(title: "Login notwendig", message: "", preferredStyle: UIAlertController.Style.alert)
         alert.addTextField { (textField) in
-            textField.placeholder = "Passwort Schulwebsite"
+            textField.placeholder = "Passwort Schulwebseite"
         }
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {(String) in
             let textField = alert.textFields![0]
