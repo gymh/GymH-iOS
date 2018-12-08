@@ -16,8 +16,58 @@
 		D9A7324920AB0B8A00AC194D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A7324720AB0B8A00AC194D /* Main.storyboard */; };
 		D9A7324B20AB0B9300AC194D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9A7324A20AB0B9300AC194D /* Assets.xcassets */; };
 		D9A7324E20AB0B9300AC194D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A7324C20AB0B9300AC194D /* LaunchScreen.storyboard */; };
+		D9E875BD21BC165100CC26E8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E875BB21BC165100CC26E8 /* Interface.storyboard */; };
+		D9E875BF21BC165200CC26E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9E875BE21BC165200CC26E8 /* Assets.xcassets */; };
+		D9E875C621BC165200CC26E8 /* GymH-Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D9E875C521BC165200CC26E8 /* GymH-Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D9E875CB21BC165200CC26E8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E875CA21BC165200CC26E8 /* InterfaceController.swift */; };
+		D9E875CD21BC165200CC26E8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E875CC21BC165200CC26E8 /* ExtensionDelegate.swift */; };
+		D9E875CF21BC165200CC26E8 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E875CE21BC165200CC26E8 /* NotificationController.swift */; };
+		D9E875D121BC165300CC26E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9E875D021BC165300CC26E8 /* Assets.xcassets */; };
+		D9E875D621BC165300CC26E8 /* GymH-Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D9E875B921BC165100CC26E8 /* GymH-Watch.app */; };
 		D9F14FAB21932AEC00219E73 /* Stundenplan.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F14FAA21932AEC00219E73 /* Stundenplan.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9E875C721BC165200CC26E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9A7323620AB0B8A00AC194D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9E875C421BC165200CC26E8;
+			remoteInfo = "GymH-Watch Extension";
+		};
+		D9E875D421BC165300CC26E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9A7323620AB0B8A00AC194D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9E875B821BC165100CC26E8;
+			remoteInfo = "GymH-Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D9E875DC21BC165300CC26E8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D9E875C621BC165200CC26E8 /* GymH-Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9E875DE21BC165300CC26E8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D9E875D621BC165300CC26E8 /* GymH-Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D94A0906218F682E00886D69 /* Speiseplan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speiseplan.swift; sourceTree = "<group>"; };
@@ -33,11 +83,29 @@
 		D9A7324A20AB0B9300AC194D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9A7324D20AB0B9300AC194D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9A7324F20AB0B9300AC194D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9E875B921BC165100CC26E8 /* GymH-Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GymH-Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9E875BC21BC165100CC26E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D9E875BE21BC165200CC26E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9E875C021BC165200CC26E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9E875C521BC165200CC26E8 /* GymH-Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GymH-Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9E875CA21BC165200CC26E8 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D9E875CC21BC165200CC26E8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D9E875CE21BC165200CC26E8 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D9E875D021BC165300CC26E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9E875D221BC165300CC26E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9E875D321BC165300CC26E8 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		D9F14FAA21932AEC00219E73 /* Stundenplan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stundenplan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D9A7323B20AB0B8A00AC194D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9E875C221BC165200CC26E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				D9A7324020AB0B8A00AC194D /* Gymnasium Herzogenaurach */,
+				D9E875BA21BC165100CC26E8 /* GymH-Watch */,
+				D9E875C921BC165200CC26E8 /* GymH-Watch Extension */,
 				D9A7323F20AB0B8A00AC194D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				D9A7323E20AB0B8A00AC194D /* Gymnasium Herzogenaurach.app */,
+				D9E875B921BC165100CC26E8 /* GymH-Watch.app */,
+				D9E875C521BC165200CC26E8 /* GymH-Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +153,29 @@
 			path = "Gymnasium Herzogenaurach";
 			sourceTree = "<group>";
 		};
+		D9E875BA21BC165100CC26E8 /* GymH-Watch */ = {
+			isa = PBXGroup;
+			children = (
+				D9E875BB21BC165100CC26E8 /* Interface.storyboard */,
+				D9E875BE21BC165200CC26E8 /* Assets.xcassets */,
+				D9E875C021BC165200CC26E8 /* Info.plist */,
+			);
+			path = "GymH-Watch";
+			sourceTree = "<group>";
+		};
+		D9E875C921BC165200CC26E8 /* GymH-Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D9E875CA21BC165200CC26E8 /* InterfaceController.swift */,
+				D9E875CC21BC165200CC26E8 /* ExtensionDelegate.swift */,
+				D9E875CE21BC165200CC26E8 /* NotificationController.swift */,
+				D9E875D021BC165300CC26E8 /* Assets.xcassets */,
+				D9E875D221BC165300CC26E8 /* Info.plist */,
+				D9E875D321BC165300CC26E8 /* PushNotificationPayload.apns */,
+			);
+			path = "GymH-Watch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,15 +186,51 @@
 				D9A7323A20AB0B8A00AC194D /* Sources */,
 				D9A7323B20AB0B8A00AC194D /* Frameworks */,
 				D9A7323C20AB0B8A00AC194D /* Resources */,
+				D9E875DE21BC165300CC26E8 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D9E875D521BC165300CC26E8 /* PBXTargetDependency */,
 			);
 			name = "Gymnasium Herzogenaurach";
 			productName = "Gymnasium Herzogenaurach";
 			productReference = D9A7323E20AB0B8A00AC194D /* Gymnasium Herzogenaurach.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D9E875B821BC165100CC26E8 /* GymH-Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9E875DD21BC165300CC26E8 /* Build configuration list for PBXNativeTarget "GymH-Watch" */;
+			buildPhases = (
+				D9E875B721BC165100CC26E8 /* Resources */,
+				D9E875DC21BC165300CC26E8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9E875C821BC165200CC26E8 /* PBXTargetDependency */,
+			);
+			name = "GymH-Watch";
+			productName = "GymH-Watch";
+			productReference = D9E875B921BC165100CC26E8 /* GymH-Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D9E875C421BC165200CC26E8 /* GymH-Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9E875DB21BC165300CC26E8 /* Build configuration list for PBXNativeTarget "GymH-Watch Extension" */;
+			buildPhases = (
+				D9E875C121BC165200CC26E8 /* Sources */,
+				D9E875C221BC165200CC26E8 /* Frameworks */,
+				D9E875C321BC165200CC26E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GymH-Watch Extension";
+			productName = "GymH-Watch Extension";
+			productReference = D9E875C521BC165200CC26E8 /* GymH-Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -107,12 +238,18 @@
 		D9A7323620AB0B8A00AC194D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Philipp Dormann";
 				TargetAttributes = {
 					D9A7323D20AB0B8A00AC194D = {
 						CreatedOnToolsVersion = 9.3;
+					};
+					D9E875B821BC165100CC26E8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					D9E875C421BC165200CC26E8 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -129,6 +266,8 @@
 			projectRoot = "";
 			targets = (
 				D9A7323D20AB0B8A00AC194D /* Gymnasium Herzogenaurach */,
+				D9E875B821BC165100CC26E8 /* GymH-Watch */,
+				D9E875C421BC165200CC26E8 /* GymH-Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -141,6 +280,23 @@
 				D9A7324E20AB0B9300AC194D /* LaunchScreen.storyboard in Resources */,
 				D9A7324B20AB0B9300AC194D /* Assets.xcassets in Resources */,
 				D9A7324920AB0B8A00AC194D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9E875B721BC165100CC26E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9E875BF21BC165200CC26E8 /* Assets.xcassets in Resources */,
+				D9E875BD21BC165100CC26E8 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9E875C321BC165200CC26E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9E875D121BC165300CC26E8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +317,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9E875C121BC165200CC26E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9E875CF21BC165200CC26E8 /* NotificationController.swift in Sources */,
+				D9E875CD21BC165200CC26E8 /* ExtensionDelegate.swift in Sources */,
+				D9E875CB21BC165200CC26E8 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9E875C821BC165200CC26E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9E875C421BC165200CC26E8 /* GymH-Watch Extension */;
+			targetProxy = D9E875C721BC165200CC26E8 /* PBXContainerItemProxy */;
+		};
+		D9E875D521BC165300CC26E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9E875B821BC165100CC26E8 /* GymH-Watch */;
+			targetProxy = D9E875D421BC165300CC26E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D9A7324720AB0B8A00AC194D /* Main.storyboard */ = {
@@ -180,6 +359,14 @@
 				D983AE1420AB1ECA00FA2851 /* de */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D9E875BB21BC165100CC26E8 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9E875BC21BC165100CC26E8 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -343,6 +530,100 @@
 			};
 			name = Release;
 		};
+		D9E875D721BC165300CC26E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RULFK6MNX5;
+				IBSC_MODULE = GymH_Watch_Extension;
+				INFOPLIST_FILE = "GymH-Watch/Info.plist";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.philippdormann.GymnasiumHerzogenaurach.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		D9E875D821BC165300CC26E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RULFK6MNX5;
+				IBSC_MODULE = GymH_Watch_Extension;
+				INFOPLIST_FILE = "GymH-Watch/Info.plist";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.philippdormann.GymnasiumHerzogenaurach.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		D9E875D921BC165300CC26E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "GymH-Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.philippdormann.GymnasiumHerzogenaurach.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		D9E875DA21BC165300CC26E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "GymH-Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.philippdormann.GymnasiumHerzogenaurach.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -360,6 +641,24 @@
 			buildConfigurations = (
 				D9A7325320AB0B9300AC194D /* Debug */,
 				D9A7325420AB0B9300AC194D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9E875DB21BC165300CC26E8 /* Build configuration list for PBXNativeTarget "GymH-Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9E875D921BC165300CC26E8 /* Debug */,
+				D9E875DA21BC165300CC26E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9E875DD21BC165300CC26E8 /* Build configuration list for PBXNativeTarget "GymH-Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9E875D721BC165300CC26E8 /* Debug */,
+				D9E875D821BC165300CC26E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
