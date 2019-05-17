@@ -1,3 +1,4 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/8465edac888a9601d449/maintainability)](https://codeclimate.com/github/gymh/GymH-iOS/maintainability)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![GitHub license](https://img.shields.io/github/license/gymh/GymH-iOS.svg?style=flat-square)](https://github.com/gymh/GymH-iOS/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/gymh/GymH-iOS.svg?style=flat-square)](https://github.com/gymh/GymH-iOS/issues)
