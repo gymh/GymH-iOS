@@ -35,18 +35,28 @@ class FirstViewController: UIViewController {
             stringURL = addToURL(url: stringURL, key: "f", value: filter!)
         }
         
-        var themeID = UserDefaults.standard.string(forKey: "theme")
-        if (themeID == "" || themeID == nil) {
-            themeID = "1"
+        var themeName = UserDefaults.standard.string(forKey: "theme")
+        if traitCollection.userInterfaceStyle == .light {
+            themeName = "Standard"
+        } else {
+            themeName = "Night"
         }
         
-        stringURL = addToURL(url: stringURL, key: "theme-id", value: themeID!)
+        stringURL = addToURL(url: stringURL, key: "theme", value: themeName!)
+        
+        stringURL = addToURL(url: stringURL, key: "os", value: "ios13")
+        
         let loggedIn = UserDefaults.standard.bool(forKey: "loggedin")
         if(loggedIn){
             webView.load(URLRequest(url: URL(string: stringURL)!))
         }
         
-        stringURL = addToURL(url: stringURL, key: "platform", value: "ios")    }
+        stringURL = addToURL(url: stringURL, key: "platform", value: "ios")
+        
+        print(stringURL)
+        
+        
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         let loggedIn = UserDefaults.standard.bool(forKey: "loggedin")

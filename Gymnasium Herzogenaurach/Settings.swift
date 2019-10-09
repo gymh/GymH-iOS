@@ -50,39 +50,35 @@ class Settings: UIViewController, UITextFieldDelegate {
         UserDefaults.standard.set(text, forKey: "filter")
     }
     @IBAction func themeStandard(_ sender: UIButton) {
-        UserDefaults.standard.set("1", forKey: "theme")
+        UserDefaults.standard.set("Standard", forKey: "theme")
         showAlert()
     }
     @IBAction func themeRot(_ sender: UIButton) {
-        UserDefaults.standard.set("4", forKey: "theme")
+        UserDefaults.standard.set("Red", forKey: "theme")
         showAlert()
     }
     @IBAction func themeSand(_ sender: UIButton) {
-        UserDefaults.standard.set("27", forKey: "theme")
+        UserDefaults.standard.set("Sand", forKey: "theme")
         showAlert()
     }
     @IBAction func themeRoseGold(_ sender: UIButton) {
-        UserDefaults.standard.set("28", forKey: "theme")
+        UserDefaults.standard.set("Rosegold", forKey: "theme")
         showAlert()
     }
     @IBAction func themeBlauGrau(_ sender: UIButton) {
-        UserDefaults.standard.set("22", forKey: "theme")
+        UserDefaults.standard.set("BlueGrey", forKey: "theme")
         showAlert()
     }
     @IBAction func themeTeal(_ sender: UIButton) {
-        UserDefaults.standard.set("12", forKey: "theme")
-        showAlert()
-    }
-    @IBAction func themeMidnightblue(_ sender: UIButton) {
-        UserDefaults.standard.set("25", forKey: "theme")
+        UserDefaults.standard.set("Teal", forKey: "theme")
         showAlert()
     }
     @IBAction func themePinkFluffyUnicorn(_ sender: UIButton) {
-        UserDefaults.standard.set("2", forKey: "theme")
+        UserDefaults.standard.set("Pink", forKey: "theme")
         showAlert()
     }
     @IBAction func themeRainbow(_ sender: UIButton) {
-        UserDefaults.standard.set("23", forKey: "theme")
+        UserDefaults.standard.set("Rainbow", forKey: "theme")
         showAlert()
     }
     @IBAction func wochenansicht(_ sender: UISwitch) {

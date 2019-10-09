@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_5" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment version="4352" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,16 +13,15 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Gymnasium_Herzogenaurach" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bS-ju-Kh6">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bS-ju-Kh6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Gymnasium Herzogenaurach" id="UFw-kj-GFU">
                                         <barButtonItem key="rightBarButtonItem" title="Item" image="settings" id="smw-d8-ETT">
-                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <connections>
                                                 <segue destination="8rJ-Kc-sve" kind="show" id="ady-nk-iRH"/>
                                             </connections>
@@ -32,9 +29,63 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMG-ag-J8r">
+                                <rect key="frame" x="0.0" y="88" width="146.66666666666666" height="30"/>
+                                <state key="normal" title="MO">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="montag:" destination="9pv-A4-QxB" eventType="touchUpInside" id="UfA-UI-73K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pN-Vs-Vhr">
+                                <rect key="frame" x="154.66666666666666" y="88" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Y7a-7N-mQR"/>
+                                </constraints>
+                                <state key="normal" title="DI">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="dienstag:" destination="9pv-A4-QxB" eventType="touchUpInside" id="I9K-sH-hBi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43a-BP-M5q">
+                                <rect key="frame" x="192.66666666666666" y="88" width="29" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="29" id="I8E-Fb-9f6"/>
+                                </constraints>
+                                <state key="normal" title="MI">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="mittwoch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="615-1q-3cz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQm-Sf-p3L">
+                                <rect key="frame" x="229.66666666666666" y="88" width="29.999999999999972" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="BcP-RR-Ti4"/>
+                                </constraints>
+                                <state key="normal" title="DO">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="donnerstag:" destination="9pv-A4-QxB" eventType="touchUpInside" id="l6P-jf-8NL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kcz-Rg-oK8">
+                                <rect key="frame" x="267.66666666666669" y="88" width="146.33333333333331" height="30"/>
+                                <state key="normal" title="FR">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="freitag:" destination="9pv-A4-QxB" eventType="touchUpInside" id="8p1-NK-HIc"/>
+                                </connections>
+                            </button>
                             <wkWebView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfF-hF-TjZ">
-                                <rect key="frame" x="0.0" y="102" width="375" height="516"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="126" width="414" height="687"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <dataDetectorTypes key="dataDetectorTypes" none="YES"/>
@@ -42,62 +93,7 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMG-ag-J8r">
-                                <rect key="frame" x="0.0" y="64" width="127" height="30"/>
-                                <state key="normal" title="MO">
-                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="montag:" destination="9pv-A4-QxB" eventType="touchUpInside" id="UfA-UI-73K"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pN-Vs-Vhr">
-                                <rect key="frame" x="135" y="64" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="Y7a-7N-mQR"/>
-                                </constraints>
-                                <state key="normal" title="DI">
-                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="dienstag:" destination="9pv-A4-QxB" eventType="touchUpInside" id="I9K-sH-hBi"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43a-BP-M5q">
-                                <rect key="frame" x="173" y="64" width="29" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="29" id="I8E-Fb-9f6"/>
-                                </constraints>
-                                <state key="normal" title="MI">
-                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="mittwoch:" destination="9pv-A4-QxB" eventType="touchUpInside" id="615-1q-3cz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQm-Sf-p3L">
-                                <rect key="frame" x="210" y="64" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="BcP-RR-Ti4"/>
-                                </constraints>
-                                <state key="normal" title="DO">
-                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="donnerstag:" destination="9pv-A4-QxB" eventType="touchUpInside" id="l6P-jf-8NL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kcz-Rg-oK8">
-                                <rect key="frame" x="248" y="64" width="127" height="30"/>
-                                <state key="normal" title="FR">
-                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="freitag:" destination="9pv-A4-QxB" eventType="touchUpInside" id="8p1-NK-HIc"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xfF-hF-TjZ" firstAttribute="top" secondItem="VMG-ag-J8r" secondAttribute="bottom" constant="8" symbolic="YES" id="5Ds-aF-Ft4"/>
                             <constraint firstItem="9bS-ju-Kh6" firstAttribute="trailing" secondItem="Kcz-Rg-oK8" secondAttribute="trailing" id="7X5-Wq-B5f"/>
@@ -133,23 +129,58 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1119.2" y="-458.32083958020991"/>
+            <point key="canvasLocation" x="1118.840579710145" y="-458.70535714285711"/>
         </scene>
         <!--Einstellungen-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" userLabel="Einstellungen" customClass="Settings" customModule="Gymnasium_Herzogenaurach" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5u-f7-DJO">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vertretungsplan Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFm-9d-w7v">
+                                <rect key="frame" x="20" y="66" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Klasse/ Jahrgangsstufe eingeben" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Nqb-cr-fLv">
+                                <rect key="frame" x="20" y="89" width="374" height="34"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="namePhonePad" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <connections>
+                                    <action selector="filterChanged:" destination="8rJ-Kc-sve" eventType="editingChanged" id="aOP-yU-Avn"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Wochenübersicht als Startseite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8b-5a-n7j">
+                                <rect key="frame" x="20" y="171" width="318" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ofT-mw-HCP">
+                                <rect key="frame" x="345" y="210" width="51" height="31"/>
+                                <connections>
+                                    <action selector="lehrername:" destination="8rJ-Kc-sve" eventType="valueChanged" id="LUZ-2d-D56"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Vollständige Lehrernamen anzeigen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lf6-xx-zGf">
+                                <rect key="frame" x="20" y="210" width="273" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5u-f7-DJO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Einstellungen" id="gZv-ny-DHO">
                                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="9pW-GD-4IU">
-                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <connections>
                                                 <segue destination="49e-Tb-3d3" kind="show" id="3Eb-tl-Cxv"/>
                                             </connections>
@@ -157,184 +188,29 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vertretungsplan Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFm-9d-w7v">
-                                <rect key="frame" x="16" y="74" width="343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Klasse/ Jahrgangsstufe eingeben" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Nqb-cr-fLv">
-                                <rect key="frame" x="16" y="97" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="namePhonePad" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
-                                <connections>
-                                    <action selector="filterChanged:" destination="8rJ-Kc-sve" eventType="editingChanged" id="aOP-yU-Avn"/>
-                                </connections>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vertretungsplan Design" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIe-TC-QPL">
-                                <rect key="frame" x="16" y="135" width="343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dd-WX-6mE">
-                                <rect key="frame" x="16" y="202" width="343" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Rot"/>
-                                <connections>
-                                    <action selector="themeRot:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="aDk-xv-Ycq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5B-mC-4Bu">
-                                <rect key="frame" x="16" y="240" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.9882352941176471" green="0.94117647058823528" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Sand"/>
-                                <connections>
-                                    <action selector="themeSand:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="ta0-E9-Xdc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksb-yd-Jez">
-                                <rect key="frame" x="16" y="278" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.87450980392156863" green="0.5607843137254902" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Rose Gold"/>
-                                <connections>
-                                    <action selector="themeRoseGold:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="9bJ-Mt-9BU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxM-jL-rNJ">
-                                <rect key="frame" x="16" y="316" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.37647058823529411" green="0.49019607843137253" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Blau Grau"/>
-                                <connections>
-                                    <action selector="themeBlauGrau:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="YZb-b3-6gH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFj-ze-BnH">
-                                <rect key="frame" x="16" y="354" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.58823529411764708" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Blau Grün"/>
-                                <connections>
-                                    <action selector="themeTeal:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="z7U-Sj-Ft3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQ7-Fa-mVK">
-                                <rect key="frame" x="16" y="392" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.17254901960784313" green="0.24313725490196078" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Mitternachtsblau"/>
-                                <connections>
-                                    <action selector="themeMidnightblue:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="mnu-Bs-IfC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iba-Ql-LaK">
-                                <rect key="frame" x="16" y="164" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.29984567813503471" green="0.54529985431557026" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Standard"/>
-                                <connections>
-                                    <action selector="themeStandard:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="UmE-ok-gNZ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeX-LE-CMP">
-                                <rect key="frame" x="16" y="430" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.94117647058823528" green="0.38431372549019605" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="PinkFluffyUnicorn"/>
-                                <connections>
-                                    <action selector="themePinkFluffyUnicorn:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="MeR-5D-gOf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TV8-s3-FLj">
-                                <rect key="frame" x="16" y="468" width="343" height="30"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Rainbow"/>
-                                <connections>
-                                    <action selector="themePinkFluffyUnicorn:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="acd-L4-Cxs"/>
-                                    <action selector="themeRainbow:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="PRk-RF-cQL"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wochenübersicht als Startseite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8b-5a-n7j">
-                                <rect key="frame" x="16" y="511" width="287" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Lag-GQ-2bY">
-                                <rect key="frame" x="310" y="506" width="51" height="31"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Lag-GQ-2bY">
+                                <rect key="frame" x="345" y="166" width="51" height="31"/>
                                 <connections>
                                     <action selector="wochenansicht:" destination="8rJ-Kc-sve" eventType="valueChanged" id="8I0-Ny-J5W"/>
                                 </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ofT-mw-HCP">
-                                <rect key="frame" x="310" y="545" width="51" height="31"/>
-                                <connections>
-                                    <action selector="lehrername:" destination="8rJ-Kc-sve" eventType="valueChanged" id="LUZ-2d-D56"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vollständige Lehrernamen anzeigen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lf6-xx-zGf">
-                                <rect key="frame" x="16" y="550" width="273" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="V8b-5a-n7j" firstAttribute="leading" secondItem="lf6-xx-zGf" secondAttribute="leading" id="0kP-eZ-8P2"/>
-                            <constraint firstItem="mQ7-Fa-mVK" firstAttribute="top" secondItem="MFj-ze-BnH" secondAttribute="bottom" constant="8" symbolic="YES" id="0nG-qA-MzS"/>
-                            <constraint firstItem="Iba-Ql-LaK" firstAttribute="trailing" secondItem="3dd-WX-6mE" secondAttribute="trailing" id="1e6-xC-bJG"/>
-                            <constraint firstItem="BeX-LE-CMP" firstAttribute="leading" secondItem="TV8-s3-FLj" secondAttribute="leading" id="5eO-XA-wBR"/>
-                            <constraint firstItem="lf6-xx-zGf" firstAttribute="centerY" secondItem="ofT-mw-HCP" secondAttribute="centerY" id="6xc-p4-dSz"/>
-                            <constraint firstItem="J5B-mC-4Bu" firstAttribute="leading" secondItem="ksb-yd-Jez" secondAttribute="leading" id="73d-Qy-z68"/>
-                            <constraint firstItem="TV8-s3-FLj" firstAttribute="top" secondItem="BeX-LE-CMP" secondAttribute="bottom" constant="8" symbolic="YES" id="C4Z-ad-xiV"/>
-                            <constraint firstItem="k5u-f7-DJO" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="D9R-nW-e06"/>
-                            <constraint firstItem="MFj-ze-BnH" firstAttribute="top" secondItem="TxM-jL-rNJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Fuf-2f-haK"/>
-                            <constraint firstItem="OIe-TC-QPL" firstAttribute="top" secondItem="Nqb-cr-fLv" secondAttribute="bottom" constant="8" symbolic="YES" id="Gel-t6-tjw"/>
-                            <constraint firstItem="MFj-ze-BnH" firstAttribute="trailing" secondItem="mQ7-Fa-mVK" secondAttribute="trailing" id="Gm6-kw-nXm"/>
-                            <constraint firstItem="MFj-ze-BnH" firstAttribute="leading" secondItem="mQ7-Fa-mVK" secondAttribute="leading" id="Gon-tB-R71"/>
-                            <constraint firstItem="TxM-jL-rNJ" firstAttribute="trailing" secondItem="MFj-ze-BnH" secondAttribute="trailing" id="J1x-p5-3L9"/>
-                            <constraint firstItem="TxM-jL-rNJ" firstAttribute="top" secondItem="ksb-yd-Jez" secondAttribute="bottom" constant="8" symbolic="YES" id="LRH-Jb-uLA"/>
-                            <constraint firstItem="TxM-jL-rNJ" firstAttribute="leading" secondItem="MFj-ze-BnH" secondAttribute="leading" id="Mkj-kh-TXd"/>
-                            <constraint firstItem="Nqb-cr-fLv" firstAttribute="leading" secondItem="OIe-TC-QPL" secondAttribute="leading" id="Mxh-sb-OtI"/>
-                            <constraint firstItem="k5u-f7-DJO" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="RFv-rg-jEN"/>
-                            <constraint firstItem="Lag-GQ-2bY" firstAttribute="leading" secondItem="V8b-5a-n7j" secondAttribute="trailing" constant="7" id="S60-vd-Hp1"/>
-                            <constraint firstItem="BFm-9d-w7v" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="VKB-ob-9Ui"/>
-                            <constraint firstItem="k5u-f7-DJO" firstAttribute="centerX" secondItem="BFm-9d-w7v" secondAttribute="centerX" id="VNb-Tl-4BG"/>
-                            <constraint firstItem="Iba-Ql-LaK" firstAttribute="leading" secondItem="3dd-WX-6mE" secondAttribute="leading" id="Whh-ya-95b"/>
-                            <constraint firstItem="BeX-LE-CMP" firstAttribute="trailing" secondItem="TV8-s3-FLj" secondAttribute="trailing" id="X7Y-hN-fKc"/>
-                            <constraint firstItem="mQ7-Fa-mVK" firstAttribute="trailing" secondItem="BeX-LE-CMP" secondAttribute="trailing" id="XUr-g1-iqe"/>
-                            <constraint firstItem="3dd-WX-6mE" firstAttribute="top" secondItem="Iba-Ql-LaK" secondAttribute="bottom" constant="8" symbolic="YES" id="aN3-1p-B1F"/>
-                            <constraint firstItem="BFm-9d-w7v" firstAttribute="trailing" secondItem="Nqb-cr-fLv" secondAttribute="trailing" id="bWq-Fa-LvF"/>
-                            <constraint firstItem="BFm-9d-w7v" firstAttribute="top" secondItem="k5u-f7-DJO" secondAttribute="bottom" constant="10" id="bpG-dU-ukL"/>
-                            <constraint firstItem="Nqb-cr-fLv" firstAttribute="trailing" secondItem="OIe-TC-QPL" secondAttribute="trailing" id="dUN-hW-y0m"/>
-                            <constraint firstItem="ksb-yd-Jez" firstAttribute="leading" secondItem="TxM-jL-rNJ" secondAttribute="leading" id="f05-L5-W32"/>
-                            <constraint firstItem="BeX-LE-CMP" firstAttribute="top" secondItem="mQ7-Fa-mVK" secondAttribute="bottom" constant="8" symbolic="YES" id="hJ1-xw-ggb"/>
-                            <constraint firstItem="OIe-TC-QPL" firstAttribute="trailing" secondItem="Iba-Ql-LaK" secondAttribute="trailing" id="iar-Kg-0MQ"/>
-                            <constraint firstItem="TV8-s3-FLj" firstAttribute="leading" secondItem="V8b-5a-n7j" secondAttribute="leading" id="im1-Yu-wb5"/>
-                            <constraint firstAttribute="trailing" secondItem="k5u-f7-DJO" secondAttribute="trailing" id="kj8-d4-IM6"/>
-                            <constraint firstItem="J5B-mC-4Bu" firstAttribute="trailing" secondItem="ksb-yd-Jez" secondAttribute="trailing" id="lDg-cs-SA3"/>
-                            <constraint firstItem="Lag-GQ-2bY" firstAttribute="leading" secondItem="ofT-mw-HCP" secondAttribute="leading" id="lph-IL-lVT"/>
-                            <constraint firstItem="3dd-WX-6mE" firstAttribute="leading" secondItem="J5B-mC-4Bu" secondAttribute="leading" id="lpo-jF-fUa"/>
-                            <constraint firstItem="Iba-Ql-LaK" firstAttribute="top" secondItem="OIe-TC-QPL" secondAttribute="bottom" constant="8" symbolic="YES" id="mTC-rx-hqp"/>
-                            <constraint firstItem="3dd-WX-6mE" firstAttribute="trailing" secondItem="J5B-mC-4Bu" secondAttribute="trailing" id="oaT-3v-Km1"/>
-                            <constraint firstItem="ofT-mw-HCP" firstAttribute="top" secondItem="Lag-GQ-2bY" secondAttribute="bottom" constant="8" symbolic="YES" id="oth-0W-1qq"/>
-                            <constraint firstItem="mQ7-Fa-mVK" firstAttribute="leading" secondItem="BeX-LE-CMP" secondAttribute="leading" id="rkR-nL-x8Q"/>
-                            <constraint firstItem="Lag-GQ-2bY" firstAttribute="top" secondItem="TV8-s3-FLj" secondAttribute="bottom" constant="8" symbolic="YES" id="s8D-VC-KuM"/>
-                            <constraint firstItem="TV8-s3-FLj" firstAttribute="trailing" secondItem="Lag-GQ-2bY" secondAttribute="trailing" id="sTX-QR-u3Y"/>
-                            <constraint firstItem="BFm-9d-w7v" firstAttribute="leading" secondItem="Nqb-cr-fLv" secondAttribute="leading" id="tCI-hA-V1U"/>
-                            <constraint firstItem="OIe-TC-QPL" firstAttribute="leading" secondItem="Iba-Ql-LaK" secondAttribute="leading" id="wmH-eh-lhA"/>
-                            <constraint firstItem="ksb-yd-Jez" firstAttribute="top" secondItem="J5B-mC-4Bu" secondAttribute="bottom" constant="8" symbolic="YES" id="wr3-Z1-k22"/>
-                            <constraint firstItem="ksb-yd-Jez" firstAttribute="trailing" secondItem="TxM-jL-rNJ" secondAttribute="trailing" id="xUm-NG-tqa"/>
-                            <constraint firstItem="Nqb-cr-fLv" firstAttribute="top" secondItem="BFm-9d-w7v" secondAttribute="bottom" constant="2" id="yDu-4A-phu"/>
-                            <constraint firstItem="J5B-mC-4Bu" firstAttribute="top" secondItem="3dd-WX-6mE" secondAttribute="bottom" constant="8" symbolic="YES" id="yhf-7q-tqx"/>
-                            <constraint firstItem="V8b-5a-n7j" firstAttribute="centerY" secondItem="Lag-GQ-2bY" secondAttribute="centerY" id="zm8-7z-0el"/>
+                            <constraint firstItem="V8b-5a-n7j" firstAttribute="centerY" secondItem="Lag-GQ-2bY" secondAttribute="centerY" id="1h8-FI-tx6"/>
+                            <constraint firstItem="k5u-f7-DJO" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="C7E-Y2-Wbf"/>
+                            <constraint firstItem="BFm-9d-w7v" firstAttribute="top" secondItem="k5u-f7-DJO" secondAttribute="bottom" constant="10" id="CWi-T0-Rdu"/>
+                            <constraint firstItem="lf6-xx-zGf" firstAttribute="top" secondItem="ofT-mw-HCP" secondAttribute="top" id="EEx-x1-4Wh"/>
+                            <constraint firstItem="k5u-f7-DJO" firstAttribute="centerX" secondItem="BFm-9d-w7v" secondAttribute="centerX" id="Lyc-3h-YsE"/>
+                            <constraint firstAttribute="trailing" secondItem="k5u-f7-DJO" secondAttribute="trailing" id="PRN-I5-WyA"/>
+                            <constraint firstItem="BFm-9d-w7v" firstAttribute="trailing" secondItem="Nqb-cr-fLv" secondAttribute="trailing" id="QNA-N9-4lS"/>
+                            <constraint firstItem="Lag-GQ-2bY" firstAttribute="leading" secondItem="V8b-5a-n7j" secondAttribute="trailing" constant="7" id="Rum-uh-Ci0"/>
+                            <constraint firstItem="BFm-9d-w7v" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="TMQ-gV-UMZ"/>
+                            <constraint firstItem="Lag-GQ-2bY" firstAttribute="leading" secondItem="ofT-mw-HCP" secondAttribute="leading" id="dKQ-tG-7cc"/>
+                            <constraint firstItem="ofT-mw-HCP" firstAttribute="top" secondItem="Lag-GQ-2bY" secondAttribute="bottom" constant="13" id="diQ-M8-6dv"/>
+                            <constraint firstItem="BFm-9d-w7v" firstAttribute="leading" secondItem="Nqb-cr-fLv" secondAttribute="leading" id="eEo-eL-ftJ"/>
+                            <constraint firstItem="V8b-5a-n7j" firstAttribute="leading" secondItem="lf6-xx-zGf" secondAttribute="leading" id="elh-P6-M5Q"/>
+                            <constraint firstItem="Nqb-cr-fLv" firstAttribute="top" secondItem="BFm-9d-w7v" secondAttribute="bottom" constant="2" id="t3n-NU-7dF"/>
+                            <constraint firstItem="k5u-f7-DJO" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="xRv-fw-D6a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
@@ -356,8 +232,7 @@
                     <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
@@ -376,16 +251,15 @@
             <objects>
                 <viewController id="9XN-Gm-riC" userLabel="Termine" customClass="Termine" customModule="Gymnasium_Herzogenaurach" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gdK-q3-4x0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hrb-yQ-7uD">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrb-yQ-7uD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Gymnasium Herzogenaurach" id="ZGJ-92-Rgu">
                                         <barButtonItem key="rightBarButtonItem" title="Item" image="settings" id="KnY-Sd-mFA">
-                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <connections>
                                                 <segue destination="8rJ-Kc-sve" kind="show" id="1EQ-Zm-ak2"/>
                                             </connections>
@@ -394,8 +268,8 @@
                                 </items>
                             </navigationBar>
                             <wkWebView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Cg-Bb-kuR">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -403,7 +277,6 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="0Cg-Bb-kuR" firstAttribute="top" secondItem="hrb-yQ-7uD" secondAttribute="bottom" id="gwE-8B-tIU"/>
@@ -430,16 +303,15 @@
             <objects>
                 <viewController id="WD6-oK-4AG" userLabel="Speiseplan" customClass="Speiseplan" customModule="Gymnasium_Herzogenaurach" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v7j-T1-FpX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Afv-ZK-Jb2">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Afv-ZK-Jb2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Gymnasium Herzogenaurach" id="rQv-6e-CyH">
                                         <barButtonItem key="rightBarButtonItem" title="Item" image="settings" id="u2T-m6-Ln2">
-                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <connections>
                                                 <segue destination="8rJ-Kc-sve" kind="show" id="Hek-ut-6bz"/>
                                             </connections>
@@ -448,14 +320,13 @@
                                 </items>
                             </navigationBar>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egc-Bt-ywA">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Afv-ZK-Jb2" firstAttribute="leading" secondItem="v7j-T1-FpX" secondAttribute="leading" id="4uu-wv-f32"/>
                             <constraint firstItem="egc-Bt-ywA" firstAttribute="bottom" secondItem="7eR-iP-QZI" secondAttribute="bottom" id="AaD-Bm-KbI"/>
@@ -481,16 +352,15 @@
             <objects>
                 <viewController id="FHf-kO-Wsp" customClass="News" customModule="Gymnasium_Herzogenaurach" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gQA-OH-Dcw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfK-jv-mMY">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfK-jv-mMY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                 <items>
                                     <navigationItem title="Gymnasium Herzogenaurach" id="lmG-v1-j4o">
                                         <barButtonItem key="rightBarButtonItem" title="Item" image="settings" id="2eH-qT-zDb">
-                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <connections>
                                                 <segue destination="8rJ-Kc-sve" kind="show" id="0jN-mu-CZ8"/>
                                             </connections>
@@ -499,14 +369,13 @@
                                 </items>
                             </navigationBar>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qhp-pq-yNl">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="tfK-jv-mMY" firstAttribute="top" secondItem="61o-AQ-uPT" secondAttribute="top" id="3BJ-mR-Zzh"/>
                             <constraint firstItem="qhp-pq-yNl" firstAttribute="bottom" secondItem="61o-AQ-uPT" secondAttribute="bottom" id="Uoa-2q-lbf"/>
@@ -532,16 +401,15 @@
             <objects>
                 <viewController id="e43-3K-nCq" userLabel="Stundenplan" customClass="Stundenplan" customModule="Gymnasium_Herzogenaurach" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3UQ-rn-9kJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oVq-9C-Eel">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVq-9C-Eel">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                 <items>
                                     <navigationItem title="Gymnasium Herzogenaurach" id="eZg-iT-78H">
                                         <barButtonItem key="rightBarButtonItem" title="Item" image="settings" id="bzo-x8-eal">
-                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <connections>
                                                 <segue destination="8rJ-Kc-sve" kind="show" id="xZP-yl-Gko"/>
                                             </connections>
@@ -550,7 +418,7 @@
                                 </items>
                             </navigationBar>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bio-kl-vGJ">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <dataDetectorTypes key="dataDetectorTypes" none="YES"/>
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -558,7 +426,6 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="oVq-9C-Eel" firstAttribute="leading" secondItem="3UQ-rn-9kJ" secondAttribute="leading" id="3sb-hE-luk"/>
                             <constraint firstItem="bio-kl-vGJ" firstAttribute="top" secondItem="oVq-9C-Eel" secondAttribute="bottom" id="9CU-GV-HHe"/>
@@ -581,14 +448,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar" width="37.5" height="37.5"/>
-        <image name="clock" width="37.5" height="37.5"/>
-        <image name="food" width="37.5" height="37.5"/>
-        <image name="news" width="37.5" height="37.5"/>
-        <image name="notification" width="37.5" height="37.5"/>
+        <image name="calendar" width="16.666666030883789" height="16.666666030883789"/>
+        <image name="clock" width="16.666666030883789" height="16.666666030883789"/>
+        <image name="food" width="16.666666030883789" height="16.666666030883789"/>
+        <image name="news" width="16.666666030883789" height="16.666666030883789"/>
+        <image name="notification" width="16.666666030883789" height="16.666666030883789"/>
         <image name="settings" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ady-nk-iRH"/>
+        <segue reference="1EQ-Zm-ak2"/>
     </inferredMetricsTieBreakers>
 </document>
